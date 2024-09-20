@@ -30,7 +30,7 @@
 #include "utils.h"
 
 #ifndef PACKAGE_VERSION
-#define PACKAGE_VERSION "0.7.18-r1243-dirty"
+#define PACKAGE_VERSION "0.7.18-r1243-1"
 #endif
 
 int bwa_fa2pac(int argc, char *argv[]);
@@ -57,14 +57,16 @@ static int usage()
 {
 	fprintf(stderr, "\n");
 	fprintf(stderr, "Program: bwa (alignment via Burrows-Wheeler transformation)\n");
+	fprintf(stderr, "Fork:    This fork of bwa supports interactive `bwa aln`\n");
 	fprintf(stderr, "Version: %s\n", PACKAGE_VERSION);
-	fprintf(stderr, "Contact: Heng Li <hli@ds.dfci.harvard.edu>\n\n");
+	fprintf(stderr, "Contact: Fulcrum Genomics LLC <contact@fulcrumgenomics.com>\n\n");
 	fprintf(stderr, "Usage:   bwa <command> [options]\n\n");
+	fprintf(stderr, "NOTE:    For Bioconda installs replace `bwa` with `bwa-aln-interactive`\n\n");
 	fprintf(stderr, "Command: index         index sequences in the FASTA format\n");
 	fprintf(stderr, "         mem           BWA-MEM algorithm\n");
 	fprintf(stderr, "         fastmap       identify super-maximal exact matches\n");
 	fprintf(stderr, "         pemerge       merge overlapping paired ends (EXPERIMENTAL)\n");
-	fprintf(stderr, "         aln           gapped/ungapped alignment\n");
+	fprintf(stderr, "         aln           gapped/ungapped alignment (interactive)\n");
 	fprintf(stderr, "         samse         generate alignment (single ended)\n");
 	fprintf(stderr, "         sampe         generate alignment (paired ended)\n");
 	fprintf(stderr, "         bwasw         BWA-SW for long queries (DEPRECATED)\n");
