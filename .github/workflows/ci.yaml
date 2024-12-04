@@ -8,7 +8,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     strategy:
       matrix:
         compiler: [gcc, clang]
@@ -21,7 +21,7 @@ jobs:
       run:  make CC=${{ matrix.compiler }}
 
   build-aarch64:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     strategy:
       matrix:
         compiler: [gcc, clang]
