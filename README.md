@@ -3,6 +3,11 @@
 [![GitHub Downloads](https://img.shields.io/github/downloads/lh3/bwa/total.svg?style=flat&label=GitHub%20downloads)](https://github.com/lh3/bwa/releases)
 [![BioConda Install](https://img.shields.io/conda/dn/bioconda/bwa.svg?style=flag&label=BioConda%20install)](https://anaconda.org/bioconda/bwa)
 
+
+# This repo is no longer being maintained!!!
+
+Please use [`pybwa`](https://github.com/fulcrumgenomics/pybwa) instead.
+
 **Note: [minimap2][minimap2] has replaced BWA-MEM for __PacBio and Nanopore__ read
 alignment.** It retains all major BWA-MEM features, but is ~50 times as fast,
 more versatile, more accurate and produces better base-level alignment.
