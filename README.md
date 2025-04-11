@@ -13,7 +13,7 @@ BWA-MEM2 is about twice as fast as BWA-MEM and outputs near identical alignments
 [bwa-mem2]: https://github.com/bwa-mem2/bwa-mem2
 
 <p>
-<a href float="left"="https://fulcrumgenomics.com"><img src=".github/logos/fulcrumgenomics.svg" alt="Fulcrum Genomics" height="100"/></a>
+<a href="https://fulcrumgenomics.com"><img src=".github/logos/fulcrumgenomics.svg" alt="Fulcrum Genomics" height="100"/></a>
 </p>
 
 [Visit us at Fulcrum Genomics](https://www.fulcrumgenomics.com) to learn more about how we can power your Bioinformatics with bwa-aln-interactive and beyond.
