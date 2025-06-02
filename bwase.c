@@ -531,7 +531,7 @@ void bwase_initialize()
 
 void bwa_sai2sam_se_core(const char *prefix, const char *fn_sa, const char *fn_fa, int n_occ, const char *rg_line)
 {
-	extern bwa_seqio_t *bwa_open_reads(int mode, const char *fn_fa);
+	extern bwa_seqio_t *bwa_open_reads(int mode, int interactive_mode, const char *fn_fa);
 	int i, n_seqs, m_aln;
 	long long tot_seqs = 0;
 	bwt_aln1_t *aln = 0;
@@ -558,7 +558,7 @@ void bwa_sai2sam_se_core(const char *prefix, const char *fn_sa, const char *fn_f
 	err_fread_noeof(&opt, sizeof(gap_opt_t), 1, fp_sa);
 	bwa_print_sam_hdr(bns, rg_line);
 	// set ks
-	ks = bwa_open_reads(opt.mode, fn_fa);
+	ks = bwa_open_reads(opt.mode, 0, fn_fa);
 	// core loop
 	while ((seqs = bwa_read_seq(ks, 0x40000, &n_seqs, opt.mode, opt.trim_qual)) != 0) {
 		tot_seqs += n_seqs;
